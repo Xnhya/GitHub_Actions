@@ -22,4 +22,4 @@ jobs:
     - name: Compilar y ejecutar pruebas
       run: |
         javac -cp out -d out test/*.java
-        java -ea -cp out MainTest
+        java -ea -cp out test.MainTest
