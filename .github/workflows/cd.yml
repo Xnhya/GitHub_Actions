@@ -8,9 +8,9 @@ jobs:
     environment: production
     steps:
     - name: Clonar repositorio
-      uses: actions/checkout@v5
+      uses: actions/checkout@v4
     - name: Instalar JDK 17 (Temurin)
-      uses: actions/setup-java@v5
+      uses: actions/setup-java@v4
       with:
         distribution: temurin
         java-version: '17'
@@ -19,4 +19,4 @@ jobs:
         mkdir -p out
         javac -d out src/*.java
     - name: Ejecutar aplicación en Producción
-      run: java -cp out Main
+      run: echo -e "15\n18\n12" | java -cp out Main
