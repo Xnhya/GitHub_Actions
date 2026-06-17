@@ -1,3 +1,5 @@
+package test;
+
 public class MainTest {
     public static void main(String[] args) {
         assert calcularPromedio(10, 10, 10) == 10.0 : "Error en caso 1";
